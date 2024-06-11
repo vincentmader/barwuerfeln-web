@@ -72,4 +72,9 @@ img {
     padding: 0.25em;
     padding-left: 0.5em;
     color: white;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    text-decoration: underline;
 }
