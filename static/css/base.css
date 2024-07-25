@@ -62,6 +62,9 @@ body {
 
     color: black;
 
+    h2 {
+        margin-top: 0px;
+    }
 
     p {}
 
