@@ -61,6 +61,10 @@ body {
     border-radius: 2em;
 
     color: black;
+
+    h3 {
+        margin: 0px;
+    }
 }
 
 #content .info h4 {
@@ -95,8 +99,4 @@ img {
 
 .bold {
     font-weight: bold;
-}
-
-.no-top-margin {
-    margin-top: 0px;
 }
