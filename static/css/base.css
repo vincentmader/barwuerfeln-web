@@ -61,21 +61,6 @@ body {
     border-radius: 2em;
 
     color: black;
-
-    h2 {
-        margin-top: 0px;
-    }
-
-    .center {
-        width: 100%;
-        text-align: center;
-    }
-
-    p {}
-
-    ul li {
-        /* padding-bottom: 0.25em; */
-    }
 }
 
 #content .info h4 {
@@ -101,4 +86,17 @@ img {
 
 #footer a:hover {
     text-decoration: underline;
+}
+
+.center {
+    width: 100%;
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.no-top-margin {
+    margin-top: 0px;
 }
