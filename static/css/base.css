@@ -50,14 +50,14 @@ body {
     --p: 2em;
     width: calc(var(--w) - 2 * var(--p));
     margin: auto;
-    margin-top: 2em;
+    /* margin-top: 2em; */
     margin-bottom: 2em;
 
     background-color: white;
     padding-right: var(--p);
     padding-left: var(--p);
-    /* padding-top: var(--p); */
-    /* padding-bottom: var(--p); */
+    padding-top: var(--p);
+    padding-bottom: var(--p);
     border-radius: 2em;
 
     color: black;
