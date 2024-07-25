@@ -24,8 +24,14 @@ body {
         text-align: center;
     }
 
-    title img {
-        height: 200px;
+    title {
+        img {
+            height: 200px;
+        }
+
+        h1 {
+            margin-bottom: 0px;
+        }
     }
 }
 
@@ -50,11 +56,12 @@ body {
     background-color: white;
     padding-right: var(--p);
     padding-left: var(--p);
-    padding-top: var(--p);
-    padding-bottom: var(--p);
+    /* padding-top: var(--p); */
+    /* padding-bottom: var(--p); */
     border-radius: 2em;
 
     color: black;
+
 
     p {}
 
