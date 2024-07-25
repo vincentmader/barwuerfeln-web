@@ -59,6 +59,11 @@ body {
     }
 }
 
+#content .info h4 {
+    width: 100%;
+    text-align: center;
+}
+
 img {
     height: 30vh;
     width: 30vh;
