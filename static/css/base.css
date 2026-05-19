@@ -6,14 +6,15 @@
 }
 
 :root {
-    --bg:           #0d0d14;
-    --surface:      #13131d;
-    --surface-2:    #1a1a27;
-    --accent:       #f5a623;
-    --accent-dim:   rgba(245, 166, 35, 0.12);
-    --text:         #f0f0f8;
-    --text-muted:   #6b6b8a;
-    --border:       rgba(255, 255, 255, 0.07);
+    --bg:           #06101e;
+    --surface:      #0b1a30;
+    --surface-2:    #112240;
+    --accent:       #35c87a;
+    --accent-blue:  #2548e0;
+    --accent-dim:   rgba(53, 200, 122, 0.1);
+    --text:         #e8f4ff;
+    --text-muted:   #4e6f99;
+    --border:       rgba(100, 160, 255, 0.1);
     --radius:       20px;
     --font:         -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif;
 }
@@ -67,7 +68,7 @@ body {
 
 .nav-cta {
     background: var(--accent);
-    color: #000;
+    color: #031a0d;
     text-decoration: none;
     font-weight: 700;
     font-size: 0.875rem;
@@ -98,8 +99,8 @@ body {
     position: absolute;
     inset: 0;
     background:
-        radial-gradient(ellipse 90% 60% at 50% -5%, rgba(245, 166, 35, 0.13) 0%, transparent 65%),
-        radial-gradient(ellipse 40% 30% at 85% 85%, rgba(140, 80, 220, 0.06) 0%, transparent 60%);
+        radial-gradient(ellipse 70% 55% at 20% 0%, rgba(53, 200, 122, 0.18) 0%, transparent 60%),
+        radial-gradient(ellipse 70% 55% at 80% 5%,  rgba(37, 72, 224, 0.18) 0%, transparent 60%);
     pointer-events: none;
 }
 
@@ -245,11 +246,17 @@ section h2 {
     display: flex;
     gap: 20px;
     overflow-x: auto;
-    padding: 8px 40px 40px;
+    padding: 20px 40px 40px;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
     cursor: grab;
+}
+
+@media (min-width: 900px) {
+    .screenshot-track {
+        justify-content: center;
+    }
 }
 
 .screenshot-track:active {
@@ -314,7 +321,7 @@ section h2 {
 }
 
 .step:hover {
-    border-color: rgba(245, 166, 35, 0.25);
+    border-color: rgba(53, 200, 122, 0.25);
 }
 
 .step-icon {
@@ -376,7 +383,7 @@ section h2 {
 }
 
 .feature-card:hover {
-    border-color: rgba(245, 166, 35, 0.28);
+    border-color: rgba(53, 200, 122, 0.28);
     transform: translateY(-3px);
 }
 

@@ -1,3 +1,4 @@
+from datetime import datetime
 from flask import Flask
 from flask import render_template
 
@@ -7,6 +8,11 @@ app = Flask(
     template_folder="../templates",
     static_folder="../static",
 )
+
+
+@app.context_processor
+def inject_year():
+    return {"current_year": datetime.now().year}
 
 
 @app.route("/")
