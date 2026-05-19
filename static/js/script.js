@@ -1,27 +1,26 @@
-const sleep = ms => new Promise((r) => setTimeout(r, ms));
+// Scroll-reveal via IntersectionObserver
+const observer = new IntersectionObserver(
+    (entries) => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+    { threshold: 0.08 }
+);
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-function format_date(date) {
-    let year = date.getFullYear();
-    let month = date.getMonth();
-    let day = date.getDate();
-    let hour = date.getHours();
-    let minute = date.getMinutes();
-    let second = date.getSeconds();
-    if (month < 10) {
-        month = "0" + month
-    }
-    text = year + "-" + month + "-" + day
-    text += " " + hour + ":" + minute + ":" + second;
-    return text
+// Drag-to-scroll on screenshot track
+const track = document.querySelector('.screenshot-track');
+if (track) {
+    let isDown = false, startX, scrollLeft;
+
+    track.addEventListener('mousedown', e => {
+        isDown = true;
+        startX = e.pageX - track.offsetLeft;
+        scrollLeft = track.scrollLeft;
+    });
+    track.addEventListener('mouseleave', () => { isDown = false; });
+    track.addEventListener('mouseup',    () => { isDown = false; });
+    track.addEventListener('mousemove',  e => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - track.offsetLeft;
+        track.scrollLeft = scrollLeft - (x - startX) * 1.5;
+    });
 }
-
-async function clock() {
-    while (true) {
-        let now = new Date();
-        let text = "The time is " + format_date(now);
-        console.log(text);
-        await sleep(1000);
-    }
-}
-
-clock()

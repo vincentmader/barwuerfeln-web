@@ -1,80 +1,158 @@
 {% extends "base.html" %}
 
 {% block body %}
-<script src="js/script.js"></script>
 
-<div id="content">
-    <div class="hero">
-        <div class="title">
-            <img src="img/logo.png" alt="BarWürfeln Logo" />
-            <h1>BarWürfeln</h1>
-            <p class="hero-subtitle">Lass den Zufall entscheiden, welche Bar als Nächstes dran ist.</p>
-        </div>
-    </div>
+<nav class="nav">
+    <img src="img/logo.png" alt="BarWürfeln" class="nav-logo">
+    <span class="nav-title">BarWürfeln</span>
+    <a href="#download" class="nav-cta">Download</a>
+</nav>
 
-    <div class="cta-section">
-        <a href="#" class="app-store-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z"/>
+<!-- Hero -->
+<section class="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-content fade-in">
+        <img src="img/logo.png" alt="BarWürfeln" class="hero-logo">
+        <h1>Lass den Würfel&nbsp;entscheiden.</h1>
+        <p class="hero-tagline">BarWürfeln findet zufällig eine Bar in Deiner Nähe –<br>für spontane Abende und unvergessliche Kneipentouren.</p>
+        <a href="#" id="download" class="app-store-badge">
+            <svg class="apple-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path fill="white" d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
             </svg>
-            Im App Store laden
+            <div class="badge-text">
+                <span class="badge-sub">Download on the</span>
+                <span class="badge-main">App Store</span>
+            </div>
         </a>
     </div>
+    <a href="#screenshots" class="scroll-down" aria-label="Weiter scrollen">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+    </a>
+</section>
 
-    <div class="screenshots-section">
-        <div class="screenshot-scroll">
-            <img src="img/screenshots/IMG_3979.PNG" alt="Startbildschirm – Würfeln starten" />
-            <img src="img/screenshots/IMG_3981.PNG" alt="Ergebnis – Weinloch, Heidelberg" />
-            <img src="img/screenshots/IMG_3982.PNG" alt="Ergebnis – Destille, Münster" />
-            <img src="img/screenshots/IMG_3983.PNG" alt="Ergebnis – Bierbar Alkopole, Berlin" />
-            <img src="img/screenshots/IMG_3984.PNG" alt="Standortauswahl" />
+<!-- Screenshots -->
+<section id="screenshots" class="screenshots reveal">
+    <div class="section-header">
+        <div class="section-label">Die App</div>
+        <h2>Sieht gut aus. Macht Spaß.</h2>
+    </div>
+    <div class="screenshot-track">
+        <div class="screenshot-item">
+            <img src="img/screenshots/IMG_3979.PNG" alt="Startbildschirm – Würfeln starten">
+        </div>
+        <div class="screenshot-item">
+            <img src="img/screenshots/IMG_3981.PNG" alt="Bar-Vorschlag mit Details">
+        </div>
+        <div class="screenshot-item">
+            <img src="img/screenshots/IMG_3982.PNG" alt="Bar-Details und Karte">
+        </div>
+        <div class="screenshot-item">
+            <img src="img/screenshots/IMG_3983.PNG" alt="Ergebnis in einer anderen Stadt">
+        </div>
+        <div class="screenshot-item">
+            <img src="img/screenshots/IMG_3984.PNG" alt="Standortauswahl">
         </div>
     </div>
+</section>
 
-    <div class="info">
-        <h3>Funktionen</h3>
-        <ul>
-            <li>
-                <p>Würfle Deine nächste Bar: Lass den Zufall entscheiden, welche Bar Du als nächstes besuchst. BarWürfeln macht Dein Ausgeherlebnis aufregender und überraschender.</p>
-            </li>
-            <li>
-                <p>Ideal für Kneipentouren: Plane eine Kneipentour und würfle, um mehrere neue Orte an einem Abend zu entdecken. Nie wieder dieselben Bar-Routinen!</p>
-            </li>
-            <li>
-                <p>Einfache Bedienung: Ein einfacher Wurf entscheidet, wohin es geht.</p>
-            </li>
-            <li>
-                <p>Keine Qual der Wahl mehr: BarWürfeln übernimmt für Euch! Ihr müsst nur noch die neue Bar ausprobieren!</p>
-            </li>
-            <li>
-                <p>Club, Café oder Restaurant &#8594; BarWürfeln</p>
-            </li>
-        </ul>
-        <h3>Warum BarWürfeln?</h3>
-        <ol>
-            <li>
-                <p>Abwechslung: Entfliehe der Routine und entdecke ständig neue Bars.</p>
-            </li>
-            <li>
-                <p>Spontanität: Lass den Zufall entscheiden und erlebe spontane Abenteuer.</p>
-            </li>
-            <li>
-                <p>Kneipentouren leicht gemacht: Plane eine Kneipentour und lass BarWürfeln für Dich entscheiden, wohin es geht.</p>
-            </li>
-        </ol>
-        <br />
-
-        <p class="bold center">
-            Lade BarWürfeln jetzt herunter und lass den Würfel über Dein nächstes Abenteuer entscheiden!
-        </p>
-        <p class="bold center no-bottom-margin">
-            Entdecke neue Bars und erlebe die Stadt wie nie zuvor!
-        </p>
+<!-- How it works -->
+<section class="how reveal">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-label">So geht's</div>
+            <h2>In drei Schritten zur nächsten Bar</h2>
+        </div>
+        <div class="steps">
+            <div class="step">
+                <div class="step-icon">🎲</div>
+                <div class="step-num">1</div>
+                <h3>Würfeln</h3>
+                <p>Tippe den großen Würfelknopf – BarWürfeln wählt zufällig eine Bar in Deiner Umgebung aus.</p>
+            </div>
+            <div class="step">
+                <div class="step-icon">🍺</div>
+                <div class="step-num">2</div>
+                <h3>Entdecken</h3>
+                <p>Prüfe Bewertungen, Öffnungszeiten und Preisniveau – und schau Dir die Bar auf der Karte an.</p>
+            </div>
+            <div class="step">
+                <div class="step-icon">📍</div>
+                <div class="step-num">3</div>
+                <h3>Hingehen</h3>
+                <p>Lass Dich direkt navigieren. Gefällt's nicht? Einfach nochmal würfeln.</p>
+            </div>
+        </div>
     </div>
+</section>
 
-</div>
+<!-- Features -->
+<section class="features reveal">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-label">Features</div>
+            <h2>Alles, was Du brauchst</h2>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🎲</div>
+                <h3>Zufallsauswahl</h3>
+                <p>Kein stundenlanges Grübeln mehr. Ein Würfelwurf – eine Bar. So einfach.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📍</div>
+                <h3>Standortbasiert</h3>
+                <p>Findet Bars in Deiner Nähe – oder an jedem beliebigen Ort der Welt.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔍</div>
+                <h3>Smarte Filter</h3>
+                <p>Filtere nach Preiskategorie, Mindestbewertung und ob die Bar gerade geöffnet hat.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">❤️</div>
+                <h3>Favoriten</h3>
+                <p>Speichere Deine Lieblingslokale und kehre jederzeit zu ihnen zurück.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🗺️</div>
+                <h3>Karte & Navigation</h3>
+                <p>Sieh die ausgewürfelte Bar auf der Karte und navigiere direkt dorthin.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📤</div>
+                <h3>Teilen</h3>
+                <p>Teile das Ziel mit Deinen Freunden – damit alle wissen, wo der Abend hingeht.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-<div id="footer">
-    <a href="imprint">Impressum</a>
-</div>
+<!-- CTA -->
+<section class="cta reveal">
+    <div class="cta-inner">
+        <h2>Bereit für das nächste Abenteuer?</h2>
+        <p>Kostenlos – nur für iPhone.</p>
+        <a href="#" class="app-store-badge">
+            <svg class="apple-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path fill="white" d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+            </svg>
+            <div class="badge-text">
+                <span class="badge-sub">Download on the</span>
+                <span class="badge-main">App Store</span>
+            </div>
+        </a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <img src="img/logo.png" alt="BarWürfeln" class="footer-logo">
+    <p class="footer-copy">© 2025 Vincent C. Mader &amp; Leonard B. R. Wagner</p>
+    <a href="imprint" class="footer-link">Impressum</a>
+</footer>
+
+<script src="js/script.js"></script>
+
 {% endblock body %}
