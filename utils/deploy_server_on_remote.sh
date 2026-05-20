@@ -11,6 +11,8 @@ REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 echo "==> Syncing ${REPO_ROOT} to ${REMOTE_USER}@${REMOTE_HOST}:${REMOTE_DIR} ..."
 rsync -ravz --delete \
   --exclude .venv/ \
+  --exclude documents/progress/ \
+  --exclude resources/app-store-page/ \
   --exclude __pycache__/ \
   --exclude "*.pyc" \
   --exclude .git/ \
