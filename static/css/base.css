@@ -548,6 +548,15 @@ section h2 {
     margin-top: 1px;
 }
 
+.imprint-link {
+    color: var(--text);
+    text-decoration: none;
+}
+
+.imprint-link:hover {
+    text-decoration: underline;
+}
+
 .imprint-row .imprint-label {
     color: var(--text-muted);
     font-size: 0.75rem;
