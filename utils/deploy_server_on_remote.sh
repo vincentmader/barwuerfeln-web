@@ -11,7 +11,7 @@ rsync -ravz --delete \
   --exclude __pycache__/ \
   --exclude "*.pyc" \
   --exclude .git/ \
-  ./ "${REMOTE_USER}@${REMOTE_HOST}:${REMOTE_DIR}/"
+  ../ "${REMOTE_USER}@${REMOTE_HOST}:${REMOTE_DIR}/"
 
 echo "==> Deploying on remote..."
 ssh "${REMOTE_USER}@${REMOTE_HOST}" "
