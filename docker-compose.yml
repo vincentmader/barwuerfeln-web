@@ -7,6 +7,7 @@ services:
     restart: always
     environment:
       VIRTUAL_HOST: barwuerfeln.de, www.barwuerfeln.de
+      VIRTUAL_PORT: 5020
       LETSENCRYPT_HOST: barwuerfeln.de
       LETSENCRYPT_MAIL: vincent.mader@icloud.com
     ports:
