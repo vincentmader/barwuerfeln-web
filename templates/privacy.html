@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<style>
+    .legal-card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 32px;
+        margin-top: 32px;
+        line-height: 1.6;
+        font-size: 0.95rem;
+    }
+    .legal-card h2 {
+        font-size: 1.1rem;
+        font-weight: 700;
+        margin: 28px 0 8px;
+    }
+    .legal-card h2:first-child { margin-top: 0; }
+    .legal-card p { margin: 0 0 12px; color: var(--text); }
+    .legal-card ul { margin: 0 0 12px 20px; }
+    .legal-card li { margin-bottom: 6px; }
+    .legal-card a { color: var(--accent); text-decoration: none; }
+    .legal-card a:hover { text-decoration: underline; }
+    .legal-updated { color: var(--text-muted); font-size: 0.8rem; margin-top: 24px; }
+</style>
+
+<div class="imprint-page">
+    <a href="/" class="imprint-back">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+        Zurück
+    </a>
+
+    <h1>Datenschutzerklärung</h1>
+
+    <div class="legal-card">
+        <h2>1. Verantwortlicher</h2>
+        <p>
+            Vincent C. Mader &amp; Leonard B. R. Wagner<br>
+            Im Baindtle 18, 89077 Ulm, Deutschland<br>
+            E-Mail: <a href="mailto:barwuerfeln@gmail.com">barwuerfeln@gmail.com</a>
+        </p>
+
+        <h2>2. Überblick</h2>
+        <p>
+            BarWürfeln ist datensparsam aufgebaut. Es gibt keine Benutzerkonten, kein Tracking
+            und keine Werbung. Wir verarbeiten personenbezogene Daten nur in dem Umfang, der
+            nötig ist, um dir Bars und Locations in deiner Nähe vorzuschlagen.
+        </p>
+
+        <h2>3. Standortdaten</h2>
+        <p>
+            Wenn du die Suche nutzt, verarbeiten wir deinen Standort, um Locations in der Nähe
+            zu finden. Die Koordinaten werden an unseren Server (<a href="https://api.barwuerfeln.de">api.barwuerfeln.de</a>)
+            übermittelt, der die Suche bei der Google Places API stellt. Dein Standort wird auf
+            unserem Server nicht dauerhaft gespeichert und nicht mit deiner Person verknüpft.
+        </p>
+        <p>
+            Rechtsgrundlage ist dein vorheriges, freiwilliges Einverständnis über die
+            Standortfreigabe deines Geräts (Art. 6 Abs. 1 lit. a DSGVO). Du kannst die
+            Standortfreigabe jederzeit in den Einstellungen deines Geräts widerrufen.
+        </p>
+
+        <h2>4. Google Places API</h2>
+        <p>
+            Zur Suche nach Locations nutzen wir die Google Places API von Google Ireland Ltd.
+            Dabei können Daten in Drittländer (u. a. die USA) übermittelt werden. Weitere
+            Informationen findest du in der
+            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Datenschutzerklärung von Google</a>.
+        </p>
+
+        <h2>5. Käufe (BarWürfeln Premium)</h2>
+        <p>
+            Das optionale Abonnement „BarWürfeln Premium" wird vollständig über Apple (App Store)
+            abgewickelt. Die Zahlung erfolgt über deine Apple-ID; wir erhalten und speichern
+            keine Zahlungsdaten. Es gelten die Datenschutzbestimmungen von Apple.
+        </p>
+
+        <h2>6. Lokal gespeicherte Daten</h2>
+        <p>
+            Favoriten, Verlauf sowie deine Filter- und Farbeinstellungen werden ausschließlich
+            lokal auf deinem Gerät gespeichert. Diese Daten verlassen dein Gerät nicht und werden
+            nicht an uns übertragen.
+        </p>
+
+        <h2>7. Server-Logs</h2>
+        <p>
+            Beim Zugriff auf unsere Dienste werden technisch notwendige Daten (z. B. IP-Adresse,
+            Zeitpunkt der Anfrage) kurzzeitig verarbeitet, um Betrieb und Sicherheit zu
+            gewährleisten (Art. 6 Abs. 1 lit. f DSGVO). Diese Logs werden zeitnah gelöscht.
+        </p>
+
+        <h2>8. Deine Rechte</h2>
+        <p>Dir stehen die folgenden Rechte zu:</p>
+        <ul>
+            <li>Auskunft (Art. 15 DSGVO)</li>
+            <li>Berichtigung (Art. 16 DSGVO)</li>
+            <li>Löschung (Art. 17 DSGVO)</li>
+            <li>Einschränkung der Verarbeitung (Art. 18 DSGVO)</li>
+            <li>Datenübertragbarkeit (Art. 20 DSGVO)</li>
+            <li>Widerspruch (Art. 21 DSGVO)</li>
+        </ul>
+        <p>
+            Außerdem hast du das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu
+            beschweren. Für Anliegen erreichst du uns unter
+            <a href="mailto:barwuerfeln@gmail.com">barwuerfeln@gmail.com</a>.
+        </p>
+
+        <p class="legal-updated">Stand: Juni 2026</p>
+    </div>
+</div>
+
+{% endblock body %}

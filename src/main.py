@@ -25,5 +25,10 @@ def imprint():
     return render_template("imprint.html", props={})
 
 
+@app.route("/privacy")
+def privacy():
+    return render_template("privacy.html", props={})
+
+
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5020, debug=False)
