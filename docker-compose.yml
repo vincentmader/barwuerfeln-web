@@ -8,7 +8,7 @@ services:
     environment:
       VIRTUAL_HOST: barwuerfeln.de, www.barwuerfeln.de
       VIRTUAL_PORT: 5020
-      LETSENCRYPT_HOST: barwuerfeln.de
+      LETSENCRYPT_HOST: barwuerfeln.de,www.barwuerfeln.de
       LETSENCRYPT_MAIL: vincent.mader@icloud.com
     ports:
       - 5020:5020
